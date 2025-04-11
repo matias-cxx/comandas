@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import LlamadorComandas from './App'
+import PanelPublico from './PanelPublico.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <LlamadorComandas />
+    <PanelPublico />
   </React.StrictMode>,
 )
+
