@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { useState, useEffect } from "react";
 
 const pedidosIniciales = [
@@ -62,6 +64,15 @@ export default function LlamadorComandas() {
 
   return (
     <div className="p-4 max-w-4xl mx-auto w-full">
+      {/* Menú de navegación */}
+      <div className="mb-6 text-center space-x-4">
+        <Link to="/cocina" className="text-blue-600 hover:underline">
+          🧑‍🍳 Panel de Cocina
+        </Link>
+        <Link to="/publico" className="text-blue-600 hover:underline">
+          📢 Panel Público
+        </Link>
+      </div>
       <h1 className="text-2xl font-bold mb-4 text-center">Llamador de Comandas</h1>
 
       <div className="bg-white shadow rounded-xl p-4 mb-6">
